@@ -61,13 +61,13 @@ header {
 }
 
 main {
-    div {
+    ul {
         display: flex;
         flex-direction: column;
         gap: 16px;
         justify-content: center;
         padding: 0 25px;
-        .button {
+        li {
             @extend %button-standart;
         }
         .button-submit {
@@ -80,24 +80,28 @@ footer {
     background-color: $button-color;
     padding: 8px 25px;
     border-radius: 25px 25px 0 0;
-    section {
+    ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 8x;
-        .footer-icon {
+        li {
             width: 3rem;
             height: 3rem;
-            img {
+            a {
                 width: inherit;
                 height: inherit;
+                img {
+                    width: inherit;
+                    height: inherit;
+                }
             }
         }
     }
 }
 
 /*
-! easy navigation by devices with big screen width
+! easy navigation for devices with big screen width
  */
 @media (min-width: 400px) {
     footer {
