@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+main div .button {
+  height: 64px;
+  width: 384px;
+  border-radius: 25px;
+  color: #eff5ff;
+}
+main div .button a {
+  width: inherit;
+  height: inherit;
+  display: block;
+  text-align: center;
+  line-height: 64px;
+}
+
+main div .button-submit {
+  height: 80px;
+  width: 382px;
+  border-radius: 25px;
+  color: #f66101;
+}
+main div .button-submit a {
+  width: inherit;
+  height: inherit;
+  display: block;
+  text-align: center;
+  line-height: 80px;
+}
+
+main {
+  margin-bottom: 48px;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer {
+  background-color: #eff5ff;
+  padding: 8px 50px;
+}
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+}
+footer section .footer-icon img {
+  width: 56px;
+  height: 56px;
+}/*# sourceMappingURL=main.css.map */
