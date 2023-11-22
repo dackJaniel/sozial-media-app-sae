@@ -1,9 +1,17 @@
-@import url("fonts/fonts.css");
+@import url("/app/fonts/fonts.css");
 
 * {
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ==== COLORS ==== */
@@ -35,6 +43,13 @@ $accent-color: #f66101;
     font-weight: bold;
 }
 
+header {
+    margin-bottom: 48px;
+    div {
+        height: 304px;
+    }
+}
+
 main {
     margin-bottom: 48px;
     div {
@@ -55,18 +70,29 @@ main {
 footer {
     background-color: $button-color;
     padding: 8px 25px;
+    border-radius: 25px 25px 0 0;
     section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        height: 70px;
         gap: 8x;
         .footer-icon {
+            width: 3rem;
+            height: 3rem;
             img {
-                width: 56px;
-                height: 56px;
+                width: inherit;
+                height: inherit;
             }
         }
+    }
+}
+
+/*
+! easy navigation by devices with big screen width
+ */
+@media (min-width: 400px) {
+    footer {
+        padding: 8px 100px;
     }
 }
 
