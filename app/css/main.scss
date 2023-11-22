@@ -14,22 +14,25 @@ $accent-color: #f66101;
 /* ==== BUTTONS STYLES ==== */
 %button-standart {
     height: 64px;
-    width: 384px;
+    width: 100%;
     border-radius: 25px;
-    color: $button-color;
+    background-color: $button-color;
     display: block;
     text-align: center;
     line-height: 64px;
+    color: black;
+    font-weight: bold;
 }
 
 %button-submit {
     height: 80px;
-    width: 382px;
+    width: 100%;
     border-radius: 25px;
     color: $accent-color;
     display: block;
     text-align: center;
     line-height: 80px;
+    font-weight: bold;
 }
 
 main {
@@ -38,6 +41,8 @@ main {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        justify-content: center;
+        padding: 0 25px;
         .button {
             @extend %button-standart;
         }
@@ -64,3 +69,19 @@ footer {
         }
     }
 }
+
+/*     _
+    \`*-.
+     )  _`-.
+    .  : `. .
+    : _   '  \ 
+    ; *` _.   `*-._
+    `-.-'          `-.
+      ;       `       `.
+      :.       .        \  
+      . \  .   :   .-'   . 
+      '  `+.;  ;  '      : 
+      :  '  |    ;       ;-. 
+      ; '   : :`-:     _.`* ;
+   .*' /  .*' ; .*`- +'  `*'
+   `*-*   `*-*  `*-*' */

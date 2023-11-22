@@ -9,22 +9,25 @@
 /* ==== BUTTONS STYLES ==== */
 main div .button {
   height: 64px;
-  width: 384px;
+  width: 100%;
   border-radius: 25px;
-  color: #eff5ff;
+  background-color: #eff5ff;
   display: block;
   text-align: center;
   line-height: 64px;
+  color: black;
+  font-weight: bold;
 }
 
 main div .button-submit {
   height: 80px;
-  width: 382px;
+  width: 100%;
   border-radius: 25px;
   color: #f66101;
   display: block;
   text-align: center;
   line-height: 80px;
+  font-weight: bold;
 }
 
 main {
@@ -34,6 +37,8 @@ main div {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  justify-content: center;
+  padding: 0 25px;
 }
 footer {
   background-color: #eff5ff;
@@ -49,4 +54,20 @@ footer section {
 footer section .footer-icon img {
   width: 56px;
   height: 56px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*     _
+    \`*-.
+     )  _`-.
+    .  : `. .
+    : _   '  \ 
+    ; *` _.   `*-._
+    `-.-'          `-.
+      ;       `       `.
+      :.       .        \  
+      . \  .   :   .-'   . 
+      '  `+.;  ;  '      : 
+      :  '  |    ;       ;-. 
+      ; '   : :`-:     _.`* ;
+   .*' /  .*' ; .*`- +'  `*'
+   `*-*   `*-*  `*-*' *//*# sourceMappingURL=main.css.map */
