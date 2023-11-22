@@ -25,22 +25,31 @@ $accent-color: #f66101;
     width: 100%;
     border-radius: 25px;
     background-color: $button-color;
-    display: block;
     text-align: center;
     line-height: 64px;
-    color: black;
-    font-weight: bold;
+    a {
+        display: block;
+        height: inherit;
+        width: inherit;
+        font-weight: bold;
+        color: black;
+    }
 }
 
 %button-submit {
     height: 80px;
     width: 100%;
     border-radius: 25px;
-    color: $accent-color;
-    display: block;
+    background-color: $accent-color;
     text-align: center;
     line-height: 80px;
-    font-weight: bold;
+    a {
+        display: block;
+        height: inherit;
+        width: inherit;
+        font-weight: bold;
+        color: black;
+    }
 }
 
 body {
@@ -49,30 +58,54 @@ body {
     justify-content: space-between;
     min-height: 100vh;
     gap: 16px;
-}
-
-header {
     div {
-        height: 100px;
-        img[alt] {
-            color: #f66101;
-        }
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
 }
 
+header {
+    margin: auto;
+    img {
+        margin: 16px;
+        width: 50vw;
+    }
+    img[alt] {
+        color: #f66101;
+    }
+}
+
+/* 
+* another way to solve the problem
+TODO find more elegant way ↓↓↓↓↓↓↓
+
+*/
+
+/* header {
+    display: flex;
+    height: calc(100vh - 500px);
+    img {
+        display: block;
+        margin: auto;
+        width: 50vw;
+    }
+} */
+
 main {
+    padding: 0 25px;
     ul {
         display: flex;
         flex-direction: column;
         gap: 16px;
         justify-content: center;
-        padding: 0 25px;
+
         li {
             @extend %button-standart;
         }
-        .button-submit {
+        /* .button-submit {  
             @extend %button-submit;
-        }
+        } */
     }
 }
 
