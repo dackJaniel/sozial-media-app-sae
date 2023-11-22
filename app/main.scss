@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
 $button-color: #eff5ff;
 $bg-color: white;
 $accent-color: #f66101;
@@ -31,24 +37,30 @@ $accent-color: #f66101;
 }
 
 main {
-    .button {
-        @extend %button-standart;
-    }
+    margin-bottom: 48px;
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .button {
+            @extend %button-standart;
+        }
 
-    .button-submit {
-        @extend %button-submit;
+        .button-submit {
+            @extend %button-submit;
+        }
     }
 }
 
 footer {
     background-color: $button-color;
-    padding: 50px;
+    padding: 8px 50px;
+
     section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 70px;
-        width: 430px;
         .footer-icon {
             img {
                 width: 56px;
