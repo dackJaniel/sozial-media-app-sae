@@ -31,12 +31,18 @@ $accent-color: #f66101;
 }
 
 main {
-    .button {
-        @extend %button-standart;
-    }
+    margin-bottom: 48px;
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .button {
+            @extend %button-standart;
+        }
 
-    .button-submit {
-        @extend %button-submit;
+        .button-submit {
+            @extend %button-submit;
+        }
     }
 }
 
