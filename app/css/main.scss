@@ -17,13 +17,9 @@ $accent-color: #f66101;
     width: 384px;
     border-radius: 25px;
     color: $button-color;
-    a {
-        width: inherit;
-        height: inherit;
-        display: block;
-        text-align: center;
-        line-height: 64px;
-    }
+    display: block;
+    text-align: center;
+    line-height: 64px;
 }
 
 %button-submit {
@@ -31,13 +27,9 @@ $accent-color: #f66101;
     width: 382px;
     border-radius: 25px;
     color: $accent-color;
-    a {
-        width: inherit;
-        height: inherit;
-        display: block;
-        text-align: center;
-        line-height: 80px;
-    }
+    display: block;
+    text-align: center;
+    line-height: 80px;
 }
 
 main {

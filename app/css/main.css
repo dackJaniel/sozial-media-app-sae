@@ -12,10 +12,6 @@ main div .button {
   width: 384px;
   border-radius: 25px;
   color: #eff5ff;
-}
-main div .button a {
-  width: inherit;
-  height: inherit;
   display: block;
   text-align: center;
   line-height: 64px;
@@ -26,10 +22,6 @@ main div .button-submit {
   width: 382px;
   border-radius: 25px;
   color: #f66101;
-}
-main div .button-submit a {
-  width: inherit;
-  height: inherit;
   display: block;
   text-align: center;
   line-height: 80px;
