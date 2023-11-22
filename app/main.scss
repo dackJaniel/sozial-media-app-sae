@@ -1,0 +1,59 @@
+$button-color: #eff5ff;
+$bg-color: white;
+$accent-color: #f66101;
+
+%button-standart {
+    height: 64px;
+    width: 384px;
+    border-radius: 25px;
+    color: $button-color;
+    a {
+        width: inherit;
+        height: inherit;
+        display: block;
+        text-align: center;
+        line-height: 64px;
+    }
+}
+
+%button-submit {
+    height: 80px;
+    width: 382px;
+    border-radius: 25px;
+    color: $accent-color;
+    a {
+        width: inherit;
+        height: inherit;
+        display: block;
+        text-align: center;
+        line-height: 80px;
+    }
+}
+
+main {
+    .button {
+        @extend %button-standart;
+    }
+
+    .button-submit {
+        @extend %button-submit;
+    }
+}
+
+footer {
+    background-color: $button-color;
+    padding: 50px;
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 70px;
+        width: 430px;
+        .footer-icon {
+            img {
+                width: 56px;
+                height: 56px;
+            }
+        }
+    }
+}
