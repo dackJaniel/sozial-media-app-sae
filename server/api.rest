@@ -1,0 +1,5 @@
+@HOST = http://localhost:5000
+
+// Test
+GET {{HOST}}/api/posts
+content-Type: application/json
