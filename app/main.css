@@ -1,3 +1,4 @@
+@import url("fonts/fonts.css");
 * {
   margin: 0;
   padding: 0;
@@ -42,13 +43,14 @@ main div {
 }
 footer {
   background-color: #eff5ff;
-  padding: 8px 50px;
+  padding: 8px 25px;
 }
 footer section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 70px;
+  gap: 8x;
 }
 footer section .footer-icon img {
   width: 56px;

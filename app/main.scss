@@ -1,3 +1,5 @@
+@import url("fonts/fonts.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +47,6 @@ main {
         .button {
             @extend %button-standart;
         }
-
         .button-submit {
             @extend %button-submit;
         }
@@ -54,13 +55,13 @@ main {
 
 footer {
     background-color: $button-color;
-    padding: 8px 50px;
-
+    padding: 8px 25px;
     section {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 70px;
+        gap: 8x;
         .footer-icon {
             img {
                 width: 56px;
