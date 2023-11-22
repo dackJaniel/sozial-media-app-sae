@@ -38,16 +38,18 @@ main div .button-submit {
   font-weight: bold;
 }
 
-header {
-  margin-bottom: 48px;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  gap: 16px;
 }
+
 header div {
   height: 304px;
 }
 
-main {
-  margin-bottom: 48px;
-}
 main div {
   display: flex;
   flex-direction: column;

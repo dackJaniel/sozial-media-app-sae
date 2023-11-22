@@ -43,15 +43,21 @@ $accent-color: #f66101;
     font-weight: bold;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    gap: 16px;
+}
+
 header {
-    margin-bottom: 48px;
     div {
         height: 304px;
     }
 }
 
 main {
-    margin-bottom: 48px;
     div {
         display: flex;
         flex-direction: column;
