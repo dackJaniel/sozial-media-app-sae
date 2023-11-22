@@ -1,0 +1,29 @@
+# Ignoriert alle .log Dateien
+*.log
+
+# Ignoriert alle .txt Dateien im root Verzeichnis
+/*.txt
+
+# Ignoriert alle .txt Dateien im doc/ Verzeichnis
+doc/*.txt
+
+# Ignoriert alle .pdf Dateien im doc/ Verzeichnis und allen Unterordnern
+doc/**/*.pdf
+
+# Ignoriert alle Dateien im temp/ Verzeichnis
+temp/
+
+# Ignoriert die Datei debug.log im root Verzeichnis
+/debug.log
+
+# Ignoriert die Datei config.env im root Verzeichnis
+/config.env
+
+# .env
+.env
+.env.local
+.env.*.local
+
+# nodemodules
+node_modules
+
