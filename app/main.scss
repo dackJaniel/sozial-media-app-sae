@@ -1,4 +1,4 @@
-$button-color: EFF5FF;
+$button-color: #eff5ff;
 $bg-color: white;
 $accent-color: #f66101;
 
@@ -41,7 +41,12 @@ main {
 }
 
 footer {
+    background-color: $button-color;
+    padding: 50px;
     section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         height: 70px;
         width: 430px;
         .footer-icon {
