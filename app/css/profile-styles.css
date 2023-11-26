@@ -46,15 +46,32 @@ body div {
 }
 
 header {
-  margin: auto;
+  margin: auto 0;
+  padding: 0 25px;
 }
 header img {
   display: block;
-  margin: 16px;
+  margin: 32px auto;
   width: 25vw;
 }
 header img[alt] {
   color: #f66101;
+}
+header h1 {
+  height: 104px;
+  width: 100%;
+  border-radius: 25px;
+  background-color: #eff5ff;
+  text-align: center;
+  line-height: 104px;
+}
+header p {
+  height: 32px;
+  width: 100%;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 32px;
+  font-weight: bold;
 }
 
 /* 
@@ -114,19 +131,4 @@ footer ul li a img {
   footer {
     padding: 8px 100px;
   }
-}
-/*     _
-    \`*-.
-     )  _`-.
-    .  : `. .
-    : _   '  \ 
-    ; *` _.   `*-._
-    `-.-'          `-.
-      ;       `       `.
-      :.       .        \  
-      . \  .   :   .-'   . 
-      '  `+.;  ;  '      : 
-      :  '  |    ;       ;-. 
-      ; '   : :`-:     _.`* ;
-   .*' /  .*' ; .*`- +'  `*'
-   `*-*   `*-*  `*-*' *//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=profile-styles.css.map */

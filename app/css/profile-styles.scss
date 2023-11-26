@@ -36,20 +36,13 @@ $accent-color: #f66101;
     }
 }
 
-%button-submit {
-    height: 80px;
+%name-style {
+    height: 64px;
     width: 100%;
     border-radius: 25px;
-    background-color: $accent-color;
+    background-color: $button-color;
     text-align: center;
-    line-height: 80px;
-    a {
-        display: block;
-        height: inherit;
-        width: inherit;
-        font-weight: bold;
-        color: black;
-    }
+    line-height: 64px;
 }
 
 body {
@@ -66,14 +59,31 @@ body {
 }
 
 header {
-    margin: auto;
+    margin: auto 0;
+    padding: 0 25px;
     img {
         display: block;
-        margin: 16px;
+        margin: 32px auto;
         width: 25vw;
     }
     img[alt] {
         color: #f66101;
+    }
+    h1 {
+        height: 104px;
+        width: 100%;
+        border-radius: 25px;
+        background-color: $button-color;
+        text-align: center;
+        line-height: 104px;
+    }
+    p {
+        height: 32px;
+        width: 100%;
+        text-align: center;
+        line-height: 32px;
+        margin-top: 32px;
+        font-weight: bold;
     }
 }
 
@@ -142,19 +152,3 @@ footer {
         padding: 8px 100px;
     }
 }
-
-/*     _
-    \`*-.
-     )  _`-.
-    .  : `. .
-    : _   '  \ 
-    ; *` _.   `*-._
-    `-.-'          `-.
-      ;       `       `.
-      :.       .        \  
-      . \  .   :   .-'   . 
-      '  `+.;  ;  '      : 
-      :  '  |    ;       ;-. 
-      ; '   : :`-:     _.`* ;
-   .*' /  .*' ; .*`- +'  `*'
-   `*-*   `*-*  `*-*' */
