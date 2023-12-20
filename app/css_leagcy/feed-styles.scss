@@ -1,0 +1,114 @@
+@import url("/app/fonts/fonts.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==== COLORS ==== */
+$button-color: white;
+$bg-color: #eff5ff;
+$accent-color: #f66101;
+
+/* ==== BUTTONS STYLES ==== */
+%button-standart {
+    height: 64px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: $button-color;
+    text-align: center;
+    line-height: 64px;
+    a {
+        display: block;
+        height: inherit;
+        width: inherit;
+        font-weight: bold;
+        color: black;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    gap: 32px;
+    background-color: $bg-color;
+    padding-top: 16px;
+}
+
+main {
+    padding: 0 32px;
+    margin: auto;
+
+    section {
+        padding: 24px 16px;
+        background-color: $button-color;
+        border-radius: 25px;
+        h1 {
+            margin-bottom: 16px;
+        }
+        p {
+            margin-top: 32px;
+        }
+    }
+}
+
+footer {
+    background-color: $button-color;
+    padding: 8px 25px;
+    border-radius: 25px 25px 0 0;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 8x;
+        li {
+            width: 3rem;
+            height: 3rem;
+            a {
+                width: inherit;
+                height: inherit;
+                img {
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+}
+
+/*
+! easy navigation for devices with big screen width
+ */
+@media (min-width: 400px) {
+    footer {
+        padding: 8px 100px;
+    }
+}
+
+/*     _
+    \`*-.
+     )  _`-.
+    .  : `. .
+    : _   '  \ 
+    ; *` _.   `*-._
+    `-.-'          `-.
+      ;       `       `.
+      :.       .        \  
+      . \  .   :   .-'   . 
+      '  `+.;  ;  '      : 
+      :  '  |    ;       ;-. 
+      ; '   : :`-:     _.`* ;
+   .*' /  .*' ; .*`- +'  `*'
+   `*-*   `*-*  `*-*' */

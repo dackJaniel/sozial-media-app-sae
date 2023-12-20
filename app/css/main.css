@@ -1,58 +1,45 @@
-@import url("fonts/fonts.css");
 * {
-  margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  margin: 0;
 }
 
-main div .button {
-  height: 64px;
-  width: 384px;
-  border-radius: 25px;
-  color: #eff5ff;
-}
-main div .button a {
-  width: inherit;
-  height: inherit;
-  display: block;
-  text-align: center;
-  line-height: 64px;
+ul {
+  list-style-type: none;
 }
 
-main div .button-submit {
-  height: 80px;
-  width: 382px;
-  border-radius: 25px;
-  color: #f66101;
-}
-main div .button-submit a {
-  width: inherit;
-  height: inherit;
-  display: block;
-  text-align: center;
-  line-height: 80px;
+a {
+  text-decoration: none;
 }
 
-main {
-  margin-bottom: 48px;
+@font-face {
+  font-family: secondary;
+  src: url(app\f ontsMontserrat-Regular.ttf);
+  font-weight: normal;
 }
-main div {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+@font-face {
+  font-family: primary;
+  src: url(app\f ontsMontserrat-Bold.ttf);
+  font-weight: bold;
 }
 footer {
-  background-color: #eff5ff;
-  padding: 8px 25px;
+  padding: 0 1.4375rem;
 }
-footer section {
+footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 70px;
-  gap: 8x;
+  gap: 1.5rem;
+  max-width: 20rem;
+  margin: 0 auto;
+  background-color: #F2F9FF;
+  border-radius: 1.5625rem;
+  padding: 0 1.5rem;
 }
-footer section .footer-icon img {
-  width: 56px;
-  height: 56px;
+footer ul li a {
+  display: block;
+  padding: 0.3125rem 0;
+}
+footer ul li a img {
+  display: block;
+  height: 3.5rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url("/app/fonts/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ==== COLORS ==== */
+/* ==== BUTTONS STYLES ==== */
+main ul li {
+  height: 64px;
+  width: 100%;
+  border-radius: 25px;
+  background-color: #eff5ff;
+  text-align: center;
+  line-height: 64px;
+}
+main ul li a {
+  display: block;
+  height: inherit;
+  width: inherit;
+  font-weight: bold;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  gap: 16px;
+}
+body div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+header {
+  margin: auto 0;
+  padding: 0 25px;
+}
+header img {
+  display: block;
+  margin: 32px auto;
+  width: 25vw;
+}
+header img[alt] {
+  color: #f66101;
+}
+header h1 {
+  height: 104px;
+  width: 100%;
+  border-radius: 25px;
+  background-color: #eff5ff;
+  text-align: center;
+  line-height: 104px;
+}
+header p {
+  height: 32px;
+  width: 100%;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 32px;
+  font-weight: bold;
+}
+
+/* 
+* another way to solve the problem
+TODO find more elegant way ↓↓↓↓↓↓↓
+
+*/
+/* header {
+    display: flex;
+    height: calc(100vh - 500px);
+    img {
+        display: block;
+        margin: auto;
+        width: 50vw;
+    }
+} */
+main {
+  padding: 0 25px;
+}
+main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  /* .button-submit {  
+      @extend %button-submit;
+  } */
+}
+footer {
+  background-color: #eff5ff;
+  padding: 8px 25px;
+  border-radius: 25px 25px 0 0;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8x;
+}
+footer ul li {
+  width: 3rem;
+  height: 3rem;
+}
+footer ul li a {
+  width: inherit;
+  height: inherit;
+}
+footer ul li a img {
+  width: inherit;
+  height: inherit;
+}
+
+/*
+! easy navigation for devices with big screen width
+ */
+@media (min-width: 400px) {
+  footer {
+    padding: 8px 100px;
+  }
+}/*# sourceMappingURL=profile-styles.css.map */
