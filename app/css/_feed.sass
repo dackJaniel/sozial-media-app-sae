@@ -1,0 +1,23 @@
+
+#posts
+    background-color: $colorBackground
+    height: 100vh
+    padding: $spaceMargin
+    .card
+        padding: 24px 16px
+        border-radius: 25px
+        background-color: white
+        img
+            display: block
+            width: 100%
+            height: auto
+            object-fit: cover
+        .card-body
+            .text-muted
+                margin-bottom: 16px
+                @include fontControl($font-family: primary)
+            .card-title
+                display: none
+            .card-text
+                margin-top: 32px
+                @include fontControl($font-family: secondary)

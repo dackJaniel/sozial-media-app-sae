@@ -13,15 +13,53 @@ a {
 
 @font-face {
   font-family: secondary;
-  src: url(app\f ontsMontserrat-Regular.ttf);
+  src: url(/app/fonts/Montserrat-Regular.ttf);
   font-weight: normal;
 }
 @font-face {
   font-family: primary;
-  src: url(app\f ontsMontserrat-Bold.ttf);
+  src: url(/app/fonts/Montserrat-Bold.ttf);
   font-weight: bold;
 }
+#posts {
+  background-color: #F2F9FF;
+  height: 100vh;
+  padding: 1.4375rem;
+}
+#posts .card {
+  padding: 24px 16px;
+  border-radius: 25px;
+  background-color: white;
+}
+#posts .card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#posts .card .card-body .text-muted {
+  margin-bottom: 16px;
+  font-family: primary;
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+#posts .card .card-body .card-title {
+  display: none;
+}
+#posts .card .card-body .card-text {
+  margin-top: 32px;
+  font-family: secondary;
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+
 footer {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   padding: 0 1.4375rem;
 }
 footer ul {
@@ -31,7 +69,6 @@ footer ul {
   gap: 1.5rem;
   max-width: 20rem;
   margin: 0 auto;
-  background-color: #F2F9FF;
   border-radius: 1.5625rem;
   padding: 0 1.5rem;
 }
@@ -42,4 +79,12 @@ footer ul li a {
 footer ul li a img {
   display: block;
   height: 3.5rem;
+}
+
+.blueNav {
+  background-color: #F2F9FF;
+}
+
+.whiteNav {
+  background-color: white;
 }/*# sourceMappingURL=main.css.map */

@@ -22,10 +22,9 @@ a
     justify-content: $justify-content
     gap: $gap
 
-@mixin fontControl($font-family, $font-size: 1rem, $font-weight: normal, $letter-spacing: normal)
+@mixin fontControl($font-family, $font-size: 1rem, $letter-spacing: normal)
     font-family: $font-family
     font-size: $font-size
-    font-weight: $font-weight
     letter-spacing: $letter-spacing
 
 // ! ||--------------------------------------------------------------------------------||
@@ -42,12 +41,12 @@ a
 
 @font-face
     font-family: secondary
-    src: url(app\fonts\Montserrat-Regular.ttf)
+    src: url(/app/fonts/Montserrat-Regular.ttf)
     font-weight: normal
 
 @font-face
     font-family: primary
-    src: url(app\fonts\Montserrat-Bold.ttf)
+    src: url(/app/fonts/Montserrat-Bold.ttf)
     font-weight: bold
 
 // @font-face
@@ -74,16 +73,19 @@ $blockWidth: rem(320)
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                     STYLES                                     ||
 // ! ||--------------------------------------------------------------------------------||
-
 @import feed
 
 footer
+    position: fixed
+    bottom: 1rem
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
     padding: 0 $spaceMargin
     ul
         @include flexContainer($flex-direction: row, $justify-content: space-between, $gap: $spaceGutter)
         max-width: $blockWidth
         margin: 0 auto
-        background-color: $colorBackground
         border-radius: rem(25)
         padding: 0 $spaceGutter
         li
@@ -93,3 +95,9 @@ footer
                 img
                     display: block
                     height: rem(56)
+
+.blueNav
+    background-color: $colorBackground
+
+.whiteNav
+    background-color: white
