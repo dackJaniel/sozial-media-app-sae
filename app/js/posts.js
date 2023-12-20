@@ -19,18 +19,20 @@ const getUsers = async () => {
 const print = async () => {
   const postDiv = document.getElementById("posts");
   const posts = await getPosts();
+  console.log(posts);
   const users = await getUsers();
 
   posts.forEach((post) => {
     postDiv.innerHTML += `
         <div class="card">
+            <img src="${post.image}" alt="${post.title}" />
             <div class="card-body">
             <small class="text-muted">${users[post.userId].firstname} ${
       users[post.userId].lastname
     }</small>
-                <img src="${post.thumbnail}" alt="${post.title}" />
+                
                 <h5 class="card-title">${post.title}</h5>
-                <p class="card-text">${post.body}</p>
+                <p class="card-text">${post.content}</p>
             </div>
         </div>
         `;
