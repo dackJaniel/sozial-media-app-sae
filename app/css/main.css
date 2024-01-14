@@ -54,33 +54,55 @@ a {
   letter-spacing: normal;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+  min-height: 100vh;
+}
+
 footer {
-  position: fixed;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  padding: 0 1.4375rem;
+  margin-top: auto;
+  max-width: 20rem;
 }
 footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
-  max-width: 20rem;
-  margin: 0 auto;
-  border-radius: 1.5625rem;
-  padding: 0 1.5rem;
+  border-radius: 1.5rem;
 }
 footer ul li a {
-  display: block;
-  padding: 0.3125rem 0;
+  line-height: 0;
 }
 footer ul li a img {
   display: block;
-  height: 3.5rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
 }
 
+/* footer
+ * margin-top: auto
+ * position: fixed
+ * bottom: 1rem
+ * left: 50%
+ * transform: translateX(-50%)
+ * width: 100%
+ * padding: 0 $spaceMargin
+ * ul
+ * @include flexContainer(row, space-between, $spaceGutter)
+ * max-width: $blockWidth
+ * margin: 0 auto
+ * border-radius: rem(25)
+ * padding: 0 $spaceGutter
+ * li
+ * a
+ * display: block
+ * padding: rem(5) 0
+ * img
+ * display: block
+ * height: rem(56) */
 .blueNav {
   background-color: #F2F9FF;
 }

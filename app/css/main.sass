@@ -66,6 +66,7 @@ $colorText: black
 
 $spaceMargin: rem(23)
 $spaceGutter: rem(24)
+$spaceVertical: rem(48)
 
 $blockWidth: rem(320)
 // $blockHeight:
@@ -74,27 +75,45 @@ $blockWidth: rem(320)
 // ! ||                                     STYLES                                     ||
 // ! ||--------------------------------------------------------------------------------||
 @import feed
+@import registration
 
 footer
-    position: fixed
-    bottom: 1rem
-    left: 50%
-    transform: translateX(-50%)
-    width: 100%
-    padding: 0 $spaceMargin
+    margin-top: auto
     ul
-        @include flexContainer($flex-direction: row, $justify-content: space-between, $gap: $spaceGutter)
+        margin-left: auto
+        margin-right: auto
+        @include flexContainer(row, space-between, $spaceGutter)
+        border-radius: rem(24)
         max-width: $blockWidth
-        margin: 0 auto
-        border-radius: rem(25)
-        padding: 0 $spaceGutter
         li
             a
-                display: block
-                padding: rem(5) 0
+                line-height: 0
                 img
                     display: block
-                    height: rem(56)
+                    height: rem(48)
+                    padding: rem(8) rem(16)
+
+/* footer
+ margin-top: auto
+ position: fixed
+ bottom: 1rem
+ left: 50%
+ transform: translateX(-50%)
+ width: 100%
+ padding: 0 $spaceMargin
+ ul
+ @include flexContainer(row, space-between, $spaceGutter)
+ max-width: $blockWidth
+ margin: 0 auto
+ border-radius: rem(25)
+ padding: 0 $spaceGutter
+ li
+ a
+ display: block
+ padding: rem(5) 0
+ img
+ display: block
+ height: rem(56) */
 
 .blueNav
     background-color: $colorBackground
