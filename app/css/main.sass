@@ -64,7 +64,6 @@ $colorBackground: #F2F9FF
 $colorAccent: #F66101
 $colorText: black
 
-$spaceMargin: rem(23)
 $spaceGutter: rem(24)
 $spaceVertical: rem(48)
 
@@ -75,16 +74,100 @@ $blockWidth: rem(320)
 // ! ||                                     STYLES                                     ||
 // ! ||--------------------------------------------------------------------------------||
 @import feed
-@import registration
+
+body
+    @include flexContainer(column, space-between, $spaceVertical)
+    min-height: calc(100vh - rem(48))
+    margin: $spaceGutter
+    img
+        display: block
+        margin: auto
+        max-width: $blockWidth
+    header
+        margin: auto
+        max-width: $blockWidth
+        @include flexContainer(column, space-between, $spaceGutter)
+        h1
+            font-family: primary
+            font-size: rem(32)
+            line-height: 1
+            padding: rem(36) 0
+            background-color: $colorBackground
+            width: $blockWidth
+            display: block
+            text-align: center
+            border-radius: rem(24)
+        p
+            font-family: primary
+            font-size: rem(24)
+            text-align: center
+        img
+            display: block
+            max-width: $blockWidth
+            width: rem(160)
+
+.inner-container
+    // margin-top: auto
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    gap: $spaceVertical
+    main
+        ul
+            @include flexContainer(column, space-between, $spaceGutter)
+            a
+                display: block
+                font-size: rem(16)
+                padding: rem(24) 0
+                background-color: $colorBackground
+                line-height: 1
+                text-align: center
+                width: $blockWidth
+                font-family: primary
+                color: $colorText
+                border-radius: rem(24)
+
+.submit-content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    .image-field
+        margin-bottom: rem(16)
+        img
+            display: block
+            width: $blockWidth
+            max-width: 100%
+            border-radius: rem(24)
+    .text-field
+        width: calc($blockWidth - rem(32))
+        margin-bottom: $spaceGutter
+        background-color: white
+        padding: rem(16)
+        border-radius: rem(24)
+        height: fit-content
+        box-sizing: border-box
+        p
+            font-family: secondary
+            font-size: rem(16)
+    .button-submit
+        font-family: primary
+        line-height: 1
+        font-size: rem(24)
+        color: white
+        background-color: $colorAccent
+        padding: rem(28) 0
+        width: $blockWidth
+        text-align: center
+        border-radius: rem(24)
 
 footer
-    margin-top: auto
     ul
-        margin-left: auto
-        margin-right: auto
         @include flexContainer(row, space-between, $spaceGutter)
         border-radius: rem(24)
         max-width: $blockWidth
+        padding: 0 rem(16)
         li
             a
                 line-height: 0
@@ -92,6 +175,9 @@ footer
                     display: block
                     height: rem(48)
                     padding: rem(8) rem(16)
+
+.push-down
+    margin-top: auto
 
 /* footer
  margin-top: auto
@@ -115,8 +201,8 @@ footer
  display: block
  height: rem(56) */
 
-.blueNav
+.blue-nav
     background-color: $colorBackground
 
-.whiteNav
+.white-nav
     background-color: white

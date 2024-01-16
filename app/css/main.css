@@ -24,7 +24,7 @@ a {
 #posts {
   background-color: #F2F9FF;
   height: 100vh;
-  padding: 1.4375rem;
+  padding: 1.5rem;
 }
 #posts .card {
   padding: 24px 16px;
@@ -59,19 +59,119 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 3rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 3rem);
+  margin: 1.5rem;
 }
-
-footer {
-  margin-top: auto;
+body img {
+  display: block;
+  margin: auto;
   max-width: 20rem;
 }
+body header {
+  margin: auto;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+body header h1 {
+  font-family: primary;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 2.25rem 0;
+  background-color: #F2F9FF;
+  width: 20rem;
+  display: block;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+body header p {
+  font-family: primary;
+  font-size: 1.5rem;
+  text-align: center;
+}
+body header img {
+  display: block;
+  max-width: 20rem;
+  width: 10rem;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.inner-container main ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.inner-container main ul a {
+  display: block;
+  font-size: 1rem;
+  padding: 1.5rem 0;
+  background-color: #F2F9FF;
+  line-height: 1;
+  text-align: center;
+  width: 20rem;
+  font-family: primary;
+  color: black;
+  border-radius: 1.5rem;
+}
+
+.submit-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.submit-content .image-field {
+  margin-bottom: 1rem;
+}
+.submit-content .image-field img {
+  display: block;
+  width: 20rem;
+  max-width: 100%;
+  border-radius: 1.5rem;
+}
+.submit-content .text-field {
+  width: calc(20rem - 2rem);
+  margin-bottom: 1.5rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.submit-content .text-field p {
+  font-family: secondary;
+  font-size: 1rem;
+}
+.submit-content .button-submit {
+  font-family: primary;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #F66101;
+  padding: 1.75rem 0;
+  width: 20rem;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
 footer ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
   border-radius: 1.5rem;
+  max-width: 20rem;
+  padding: 0 1rem;
 }
 footer ul li a {
   line-height: 0;
@@ -80,6 +180,10 @@ footer ul li a img {
   display: block;
   height: 3rem;
   padding: 0.5rem 1rem;
+}
+
+.push-down {
+  margin-top: auto;
 }
 
 /* footer
@@ -103,10 +207,10 @@ footer ul li a img {
  * img
  * display: block
  * height: rem(56) */
-.blueNav {
+.blue-nav {
   background-color: #F2F9FF;
 }
 
-.whiteNav {
+.white-nav {
   background-color: white;
 }/*# sourceMappingURL=main.css.map */
